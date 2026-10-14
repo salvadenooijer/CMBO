@@ -118,7 +118,14 @@ a:hover {
   color: var(--tekst-zacht);
 }
 
-.meta strong {
+.meta dt,
+.meta dd {
+  display: inline;
+  margin: 0;
+}
+
+.meta dd {
+  font-weight: 700;
   color: var(--tekst);
 }
 
@@ -162,10 +169,6 @@ a:hover {
 
 .sectie--criteria {
   background: var(--blauw-licht);
-}
-
-.sectie--meer {
-  background: var(--wit);
 }
 
 .intro {
@@ -317,44 +320,6 @@ a:hover {
   width: 0.55rem;
   height: 0.55rem;
   background: var(--blauw);
-}
-
-/* ---------- Meer weten ---------- */
-
-.links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid var(--lijn);
-}
-
-.links li {
-  border-bottom: 1px solid var(--lijn);
-}
-
-.links a {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  padding: 0.9rem 0;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.links a span {
-  margin-left: auto;
-  font-weight: 400;
-  color: var(--tekst-zacht);
-  white-space: nowrap;
-}
-
-.links a::after {
-  content: "→";
-  font-weight: 700;
-}
-
-.links a:hover span {
-  color: inherit;
 }
 
 /* ---------- Voet ---------- */
