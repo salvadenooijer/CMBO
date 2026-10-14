@@ -14,6 +14,7 @@
   --lijn: #e3e3e3;
   --achtergrond: #fff;
   --vlak: #f5f5f3;
+  --vlak-koel: #eef0f2;
 
   --font: "proxima-nova", "Proxima Nova", "Montserrat", "Helvetica Neue", Arial, sans-serif;
   --kolom: 46rem;
@@ -121,27 +122,57 @@ a:hover {
   color: var(--tekst);
 }
 
-/* ---------- Inhoud ---------- */
-
-.inhoud {
-  max-width: var(--kolom);
-  margin: 0 auto;
-  padding: 0 1rem 5rem;
-}
-
-.intro {
-  margin: 2.5rem 0 0;
-  font-size: 1.3rem;
-  line-height: 1.55;
-  font-weight: 500;
-}
+/* ---------- Inhoud: secties als kleurvlakken over de volle breedte ---------- */
 
 .sectie {
-  margin-top: 3.5rem;
+  padding: 3.5rem 1rem;
+  background: var(--achtergrond);
+}
+
+.sectie__inner {
+  max-width: var(--kolom);
+  margin: 0 auto;
 }
 
 .sectie p {
   margin: 0 0 1rem;
+}
+
+.sectie p:last-child {
+  margin-bottom: 0;
+}
+
+/* Achtergrondvlakken per sectie */
+.sectie--intro {
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
+}
+
+.sectie--wat {
+  background: var(--vlak);
+}
+
+.sectie--resultaat {
+  background: var(--wit);
+}
+
+.sectie--kwaliteit {
+  background: var(--vlak-koel);
+}
+
+.sectie--criteria {
+  background: var(--blauw-licht);
+}
+
+.sectie--meer {
+  background: var(--wit);
+}
+
+.intro {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  font-weight: 500;
 }
 
 /* Tussenkop in zwart balkje */
@@ -165,26 +196,33 @@ a:hover {
   background: var(--blauw);
 }
 
-/* ---------- Stappen met afbeeldingen ---------- */
+/* ---------- Stappen met afbeeldingen, naast elkaar ---------- */
 
 .stappen {
   list-style: none;
-  margin: 2rem 0 0;
+  max-width: var(--breed);
+  margin: 2.5rem auto 0;
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .stappen {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .stap {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--wit);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
 }
 
 .stap__beeld {
   aspect-ratio: 4 / 3;
-  background: var(--vlak);
   overflow: hidden;
 }
 
@@ -192,6 +230,11 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.stap__tekst {
+  padding: 1.25rem 1.25rem 1.5rem;
+  border-top: 4px solid var(--zwart);
 }
 
 .stap__nummer {
@@ -217,14 +260,6 @@ a:hover {
   color: var(--tekst-zacht);
 }
 
-@media (min-width: 40rem) {
-  .stap {
-    grid-template-columns: 15rem 1fr;
-    gap: 1.5rem;
-    align-items: center;
-  }
-}
-
 /* ---------- Resultaat ---------- */
 
 .resultaat {
@@ -247,8 +282,9 @@ a:hover {
 
 .citaat {
   margin: 1.5rem 0 0;
-  padding: 0 0 0 1.25rem;
-  border-left: 3px solid var(--blauw);
+  padding: 1rem 1.25rem;
+  background: var(--wit);
+  border-left: 4px solid var(--blauw);
   font-size: 1.15rem;
   font-weight: 600;
   font-style: italic;
@@ -260,7 +296,7 @@ a:hover {
   margin: 0;
   padding: 1.5rem 1.5rem 1.5rem 1.25rem;
   list-style: none;
-  background: var(--blauw-licht);
+  background: var(--wit);
   border-top: 4px solid var(--blauw);
 }
 

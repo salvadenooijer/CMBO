@@ -26,28 +26,34 @@
     <span>Werkvorm: <strong>In een team</strong></span>
   </div>
 
-  <main class="inhoud">
+  <main>
 
-    <p class="intro">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
-      erat a ante venenatis dapibus. Vivamus sagittis lacus vel augue laoreet
-      rutrum faucibus dolor auctor, zodat je stap voor stap tot een sterk idee komt.
-    </p>
+    <section class="sectie sectie--intro">
+      <div class="sectie__inner">
+        <p class="intro">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+          erat a ante venenatis dapibus. Vivamus sagittis lacus vel augue laoreet
+          rutrum faucibus dolor auctor, zodat je stap voor stap tot een sterk idee komt.
+        </p>
+      </div>
+    </section>
 
-    <section class="sectie" aria-labelledby="wat">
-      <h2 class="kop" id="wat"><span>Wat ga je doen?</span></h2>
-      <p>
-        Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur
-        purus sit amet fermentum. Maecenas faucibus mollis interdum. Nullam quis
-        risus eget urna mollis ornare vel eu leo. Je doorloopt drie stappen:
-      </p>
+    <section class="sectie sectie--wat" aria-labelledby="wat">
+      <div class="sectie__inner">
+        <h2 class="kop" id="wat"><span>Wat ga je doen?</span></h2>
+        <p>
+          Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur
+          purus sit amet fermentum. Maecenas faucibus mollis interdum. Nullam quis
+          risus eget urna mollis ornare vel eu leo. Je doorloopt drie stappen:
+        </p>
+      </div>
 
       <ol class="stappen">
         <li class="stap">
           <div class="stap__beeld">
             <img src="img/stap1-mindmap.svg" alt="Een mindmap op papier met in het midden het woord concept en daaromheen associaties zoals kleur, vorm en gevoel." width="400" height="300">
           </div>
-          <div>
+          <div class="stap__tekst">
             <span class="stap__nummer">Stap 1</span>
             <h3 class="stap__titel">Associaties in een mindmap zetten</h3>
             <p>Aenean lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor. Etiam porta sem malesuada magna mollis euismod.</p>
@@ -57,7 +63,7 @@
           <div class="stap__beeld">
             <img src="img/stap2-brainstorm.svg" alt="Drie teamleden bij een whiteboard vol post-its; één van hen plakt een nieuw briefje op het bord." width="400" height="300">
           </div>
-          <div>
+          <div class="stap__tekst">
             <span class="stap__nummer">Stap 2</span>
             <h3 class="stap__titel">Brainstormoefeningen uitvoeren met je team</h3>
             <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -67,7 +73,7 @@
           <div class="stap__beeld">
             <img src="img/stap3-visualiseren.svg" alt="Een opengeslagen schetsboek met kleine schetsen links en een uitgewerkt idee rechts, met een marker ernaast." width="400" height="300">
           </div>
-          <div>
+          <div class="stap__tekst">
             <span class="stap__nummer">Stap 3</span>
             <h3 class="stap__titel">Ideeën visualiseren</h3>
             <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus.</p>
@@ -76,55 +82,63 @@
       </ol>
     </section>
 
-    <section class="sectie" aria-labelledby="resultaat">
-      <h2 class="kop" id="resultaat"><span>Het resultaat</span></h2>
-      <p>
-        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Aan het
-        einde van deze deeltaak lever je het volgende in:
-      </p>
-      <div class="resultaat">
-        <ul>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
-          <li>Integer posuere erat a ante venenatis dapibus</li>
-          <li>Vivamus sagittis lacus vel augue laoreet rutrum</li>
+    <section class="sectie sectie--resultaat" aria-labelledby="resultaat">
+      <div class="sectie__inner">
+        <h2 class="kop" id="resultaat"><span>Het resultaat</span></h2>
+        <p>
+          Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Aan het
+          einde van deze deeltaak lever je het volgende in:
+        </p>
+        <div class="resultaat">
+          <ul>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+            <li>Integer posuere erat a ante venenatis dapibus</li>
+            <li>Vivamus sagittis lacus vel augue laoreet rutrum</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sectie sectie--kwaliteit" aria-labelledby="kwaliteit">
+      <div class="sectie__inner">
+        <h2 class="kop" id="kwaliteit"><span>Samen kijken naar kwaliteit</span></h2>
+        <p>
+          Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna,
+          vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+          Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+        </p>
+        <p>
+          Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo
+          odio, dapibus ac facilisis in, egestas eget quam.
+        </p>
+        <p class="citaat">“Lorem ipsum dolor sit amet, wat maakt dit idee sterker?”</p>
+      </div>
+    </section>
+
+    <section class="sectie sectie--criteria" aria-labelledby="criteria">
+      <div class="sectie__inner">
+        <h2 class="kop kop--blauw" id="criteria"><span>Criteria</span></h2>
+        <ul class="criteria">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+          <li>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
+          <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
+          <li>Maecenas faucibus mollis interdum, nullam quis risus eget urna.</li>
         </ul>
       </div>
     </section>
 
-    <section class="sectie" aria-labelledby="kwaliteit">
-      <h2 class="kop" id="kwaliteit"><span>Samen kijken naar kwaliteit</span></h2>
-      <p>
-        Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna,
-        vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
-        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-      </p>
-      <p>
-        Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo
-        odio, dapibus ac facilisis in, egestas eget quam.
-      </p>
-      <p class="citaat">“Lorem ipsum dolor sit amet, wat maakt dit idee sterker?”</p>
-    </section>
-
-    <section class="sectie" aria-labelledby="criteria">
-      <h2 class="kop kop--blauw" id="criteria"><span>Criteria</span></h2>
-      <ul class="criteria">
-        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-        <li>Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-        <li>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</li>
-        <li>Donec ullamcorper nulla non metus auctor fringilla.</li>
-        <li>Maecenas faucibus mollis interdum, nullam quis risus eget urna.</li>
-      </ul>
-    </section>
-
-    <section class="sectie" aria-labelledby="meer">
-      <h2 class="kop" id="meer"><span>Meer weten</span></h2>
-      <p>Etiam porta sem malesuada magna mollis euismod. Bekijk ook:</p>
-      <ul class="links">
-        <li><a href="#">Lorem ipsum over mindmappen <span>Artikel</span></a></li>
-        <li><a href="#">Dolor sit amet: brainstormtechnieken <span>Video</span></a></li>
-        <li><a href="#">Consectetur adipiscing schetsen <span>Werkblad</span></a></li>
-      </ul>
+    <section class="sectie sectie--meer" aria-labelledby="meer">
+      <div class="sectie__inner">
+        <h2 class="kop" id="meer"><span>Meer weten</span></h2>
+        <p>Etiam porta sem malesuada magna mollis euismod. Bekijk ook:</p>
+        <ul class="links">
+          <li><a href="#">Lorem ipsum over mindmappen <span>Artikel</span></a></li>
+          <li><a href="#">Dolor sit amet: brainstormtechnieken <span>Video</span></a></li>
+          <li><a href="#">Consectetur adipiscing schetsen <span>Werkblad</span></a></li>
+        </ul>
+      </div>
     </section>
 
   </main>
