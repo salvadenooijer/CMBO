@@ -7,8 +7,15 @@
 :root {
   --zwart: #000;
   --wit: #fff;
-  --blauw: rgb(17, 147, 199);
-  --blauw-licht: rgba(17, 147, 199, 0.08);
+  /* Hoofdkleuren: blauw, zwart en wit (met grijstinten) */
+  --blauw: #39b9ec;
+  --blauw-donker: #0f7ba6; /* donkere tint voor blauwe tekst op wit (contrast) */
+  --blauw-licht: #e8f6fd;
+
+  /* Accentkleuren voor specifieke toepassingen en illustraties */
+  --roze: #e72b76;
+  --groen: #ccd626;
+  --geel: #f2b300;
   --tekst: #1a1a1a;
   --tekst-zacht: #555;
   --lijn: #e3e3e3;
@@ -53,7 +60,7 @@ a {
 }
 
 a:hover {
-  color: var(--blauw);
+  color: var(--blauw-donker);
 }
 
 /* ---------- Header met titel op afbeelding ---------- */
@@ -83,7 +90,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--wit);
+  color: var(--zwart);
   background: var(--blauw);
 }
 
@@ -196,6 +203,7 @@ a:hover {
 
 /* 'Criteria' in het blauw */
 .kop--blauw span {
+  color: var(--zwart);
   background: var(--blauw);
 }
 
@@ -235,19 +243,37 @@ a:hover {
   object-fit: cover;
 }
 
+.stap {
+  --accent: var(--blauw);
+}
+
+.stap:nth-child(1) {
+  --accent: var(--roze);
+}
+
+.stap:nth-child(2) {
+  --accent: var(--groen);
+}
+
+.stap:nth-child(3) {
+  --accent: var(--geel);
+}
+
 .stap__tekst {
   padding: 1.25rem 1.25rem 1.5rem;
-  border-top: 4px solid var(--zwart);
+  border-top: 6px solid var(--accent);
 }
 
 .stap__nummer {
   display: inline-block;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.6rem;
+  padding: 0.15rem 0.5rem;
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--blauw);
+  color: var(--zwart);
+  background: var(--accent);
 }
 
 .stap__titel {
@@ -322,12 +348,41 @@ a:hover {
   background: var(--blauw);
 }
 
-/* ---------- Voet ---------- */
+/* ---------- Knop ---------- */
 
-.voet {
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 0.875rem;
+.knop {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  padding: 0.95rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
   color: var(--wit);
   background: var(--zwart);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.knop::after {
+  content: "›";
+  font-size: 1.4em;
+  line-height: 0.8;
+  transition: transform 0.15s ease;
+}
+
+.knop:hover,
+.knop:focus-visible {
+  color: var(--zwart);
+  background: var(--blauw);
+}
+
+.knop:hover::after {
+  transform: translateX(3px);
+}
+
+.knop:focus-visible {
+  outline: 3px solid var(--zwart);
+  outline-offset: 3px;
 }

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="t">
   <title id="t">Stap 1: associaties in een mindmap zetten</title>
-  <rect width="400" height="300" fill="#e7f4fa"/>
+  <rect width="400" height="300" fill="#e8f6fd"/>
   <!-- vel papier -->
   <g transform="rotate(-3 200 150)">
     <rect x="40" y="28" width="320" height="244" fill="#000" opacity=".08" transform="translate(5 6)"/>
@@ -15,7 +15,7 @@
     <path d="M200 150 C185 190 165 210 140 232"/>
     <path d="M200 150 C220 192 240 212 268 232"/>
   </g>
-  <g fill="none" stroke="#1193c7" stroke-width="2" stroke-linecap="round">
+  <g fill="none" stroke="#39b9ec" stroke-width="2" stroke-linecap="round">
     <path d="M112 88 L84 70"/><path d="M112 88 L100 58"/>
     <path d="M290 82 L320 66"/><path d="M290 82 L304 54"/>
     <path d="M98 170 L70 190"/>
@@ -23,7 +23,7 @@
     <path d="M268 232 L298 248"/>
   </g>
   <!-- kleine knopen -->
-  <g fill="#1193c7">
+  <g fill="#39b9ec">
     <circle cx="84" cy="70" r="5"/><circle cx="100" cy="58" r="5"/>
     <circle cx="320" cy="66" r="5"/><circle cx="304" cy="54" r="5"/>
     <circle cx="70" cy="190" r="5"/>
@@ -54,7 +54,7 @@
   <text x="200" y="155" fill="#fff" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="800" text-anchor="middle" letter-spacing="1">CONCEPT</text>
   <!-- potlood -->
   <g transform="translate(318 214) rotate(35)">
-    <rect x="0" y="0" width="12" height="70" fill="#1193c7"/>
+    <rect x="0" y="0" width="12" height="70" fill="#e72b76"/>
     <rect x="0" y="0" width="12" height="9" fill="#000"/>
     <polygon points="0,70 12,70 6,86" fill="#f1d3a4"/>
     <polygon points="4,80 8,80 6,86" fill="#000"/>
