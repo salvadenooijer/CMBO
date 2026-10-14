@@ -11,6 +11,7 @@
   --blauw: #39b9ec;
   --blauw-donker: #0f7ba6; /* donkere tint voor blauwe tekst op wit (contrast) */
   --blauw-licht: #e8f6fd;
+  --blauw-tint: #9ddcf5;
 
   /* Accentkleuren voor specifieke toepassingen en illustraties */
   --roze: #e72b76;
@@ -243,20 +244,19 @@ a:hover {
   object-fit: cover;
 }
 
+/* Stappen in oplopende tinten blauw */
 .stap {
   --accent: var(--blauw);
+  --accent-tekst: var(--zwart);
 }
 
 .stap:nth-child(1) {
-  --accent: var(--roze);
-}
-
-.stap:nth-child(2) {
-  --accent: var(--groen);
+  --accent: var(--blauw-tint);
 }
 
 .stap:nth-child(3) {
-  --accent: var(--geel);
+  --accent: var(--blauw-donker);
+  --accent-tekst: var(--wit);
 }
 
 .stap__tekst {
@@ -272,7 +272,7 @@ a:hover {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--zwart);
+  color: var(--accent-tekst);
   background: var(--accent);
 }
 
@@ -350,11 +350,16 @@ a:hover {
 
 /* ---------- Knop ---------- */
 
+.knop-rij {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
 .knop {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
-  margin-top: 2rem;
   padding: 0.95rem 1.5rem;
   font-size: 1rem;
   font-weight: 700;
@@ -362,6 +367,7 @@ a:hover {
   text-decoration: none;
   color: var(--wit);
   background: var(--zwart);
+  border-radius: 8px;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
