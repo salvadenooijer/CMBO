@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="t">
+  <title id="t">Stap 3: ideeën visualiseren</title>
+  <rect width="400" height="300" fill="#1193c7"/>
+  <!-- schetsboek -->
+  <rect x="44" y="48" width="312" height="210" fill="#000" opacity=".18" transform="translate(6 8)"/>
+  <rect x="44" y="48" width="156" height="210" fill="#fff"/>
+  <rect x="200" y="48" width="156" height="210" fill="#fbfbf8"/>
+  <line x1="200" y1="48" x2="200" y2="258" stroke="#000" stroke-width="2" opacity=".25"/>
+  <g fill="#000">
+    <circle cx="200" cy="66" r="3"/><circle cx="200" cy="90" r="3"/><circle cx="200" cy="114" r="3"/>
+    <circle cx="200" cy="138" r="3"/><circle cx="200" cy="162" r="3"/><circle cx="200" cy="186" r="3"/>
+    <circle cx="200" cy="210" r="3"/><circle cx="200" cy="234" r="3"/>
+  </g>
+  <!-- linker pagina: thumbnails -->
+  <g fill="none" stroke="#000" stroke-width="2.5">
+    <rect x="62" y="66" width="56" height="44"/>
+    <rect x="126" y="66" width="56" height="44"/>
+    <rect x="62" y="122" width="56" height="44"/>
+    <rect x="126" y="122" width="56" height="44" stroke="#1193c7" stroke-width="4"/>
+  </g>
+  <g fill="none" stroke="#000" stroke-width="2" stroke-linecap="round">
+    <circle cx="90" cy="88" r="12"/>
+    <path d="M132 102 L148 80 L160 94 L168 84 L178 102"/>
+    <path d="M70 156 h40 M70 146 h28 M70 136 h34"/>
+  </g>
+  <g fill="#1193c7"><rect x="138" y="132" width="16" height="24"/><circle cx="166" cy="144" r="10"/></g>
+  <g stroke="#000" stroke-width="2" stroke-linecap="round" opacity=".45">
+    <path d="M62 190 h112 M62 202 h96 M62 214 h104 M62 226 h70"/>
+  </g>
+  <!-- rechter pagina: uitgewerkte schets -->
+  <rect x="220" y="66" width="118" height="120" fill="#e7f4fa"/>
+  <circle cx="300" cy="96" r="16" fill="#ffd84d"/>
+  <path d="M220 186 L258 128 L284 160 L304 138 L338 186 Z" fill="#000"/>
+  <g font-family="Montserrat, Arial, sans-serif" font-weight="800" fill="#000">
+    <text x="220" y="210" font-size="15">IDEE 03</text>
+  </g>
+  <g stroke="#000" stroke-width="2" stroke-linecap="round" opacity=".45">
+    <path d="M220 224 h104 M220 236 h80"/>
+  </g>
+  <!-- vinkje bij gekozen idee -->
+  <circle cx="182" cy="122" r="11" fill="#000"/>
+  <path d="M176 122 l4 5 l8 -9" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- marker -->
+  <g transform="translate(330 210) rotate(-40)">
+    <rect x="0" y="0" width="16" height="74" rx="3" fill="#000"/>
+    <rect x="0" y="54" width="16" height="20" rx="3" fill="#fff"/>
+    <polygon points="3,74 13,74 10,86 6,86" fill="#ffd84d"/>
+  </g>
+</svg>
